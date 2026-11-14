@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>El Roble — Un respiro en Algarrobo</title>
+  <meta name="description" content="Conoce Hostal El Roble en Algarrobo. Habitaciones matrimoniales, ambiente familiar y contacto directo para consultar tu estadía.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f5f3ed">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <header class="header" id="header">
+    <a class="wordmark" href="#inicio" aria-label="El Roble, inicio"><span class="brand-name" data-text="brand.name">el roble</span><small data-text="brand.subtitle">HOSTAL · ALGARROBO</small></a>
+    <nav aria-label="Navegación principal" id="nav"><a href="#nosotros" data-text="nav.about"></a><a href="#habitaciones" data-text="nav.rooms"></a><a href="#galeria" data-text="nav.gallery"></a><a href="#ubicacion" data-text="nav.location"></a></nav>
+    <a class="header-cta" href="#consulta"><span data-text="nav.cta"></span><span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">☰</button>
+  </header>
+  <main id="main">
+    <section class="hero" id="inicio" data-section="hero">
+      <img class="hero-photo" data-image="hero.image" src="assets/hostal-1.webp" alt="Fachada de madera de Hostal El Roble al atardecer" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-top"><span data-text="hero.eyebrow"></span><span class="coordinates">33° S &nbsp; / &nbsp; 71° O</span></div>
+      <div class="hero-copy"><h1 data-text="hero.title"></h1><p data-text="hero.body"></p><a href="#habitaciones" class="round-link"><span data-text="hero.cta"></span><span class="circle" aria-hidden="true">↓</span></a></div>
+      <div class="hero-bottom"><span data-text="hero.caption"></span><span aria-hidden="true">↓</span></div>
+      <div class="vertical-note" data-text="hero.side"></div>
+    </section>
+    <section class="intro section-pad" id="nosotros" data-section="about">
+      <div class="eyebrow"><span class="dot"></span><span data-text="about.eyebrow"></span></div>
+      <div class="intro-grid"><h2 data-text="about.title"></h2><div class="intro-right"><p data-text="about.body"></p><a class="text-link" href="#consulta"><span data-text="about.cta"></span><span aria-hidden="true">↗</span></a><div class="signature" data-text="about.signature"></div></div></div>
+    </section>
+    <section class="rooms section-pad" id="habitaciones" data-section="rooms">
+      <div class="room-photo-wrap"><img data-image="rooms.image" src="assets/hostal-0.webp" alt="Pasillo exterior de madera de Hostal El Roble" loading="lazy"><span class="image-caption" data-text="rooms.caption"></span></div>
+      <div class="room-copy"><div class="eyebrow" data-text="rooms.eyebrow"></div><h2 data-text="rooms.title"></h2><p data-text="rooms.body"></p><div class="room-features"><span><i aria-hidden="true">↔</i><span data-text="rooms.feature1"></span></span><span><i aria-hidden="true">◌</i><span data-text="rooms.feature2"></span></span><span><i aria-hidden="true">☼</i><span data-text="rooms.feature3"></span></span></div><a class="pill-button" href="#consulta"><span data-text="rooms.cta"></span><span aria-hidden="true">↗</span></a><small data-text="rooms.note"></small></div>
+    </section>
+    <section class="pause-strip"><span data-text="pause.first"></span><span class="asterisk" aria-hidden="true">✳</span><span data-text="pause.second"></span><span class="asterisk" aria-hidden="true">✳</span><span data-text="pause.third"></span></section>
+    <section class="gallery section-pad" id="galeria" data-section="gallery"><div class="section-head"><div><div class="eyebrow" data-text="gallery.eyebrow"></div><h2 data-text="gallery.title"></h2></div><p data-text="gallery.body"></p></div><div class="gallery-grid"><button class="gallery-item wide" data-lightbox="gallery.image1"><img data-image="gallery.image1" src="assets/hostal-1.webp" alt="Vista exterior del hostal al atardecer" loading="lazy"><span><span data-text="gallery.caption1"></span><i aria-hidden="true">↗</i></span></button><button class="gallery-item narrow" data-lightbox="gallery.image2"><img data-image="gallery.image2" src="assets/hostal-0.webp" alt="Detalles del pasillo y la fachada de madera" loading="lazy"><span><span data-text="gallery.caption2"></span><i aria-hidden="true">↗</i></span></button></div></section>
+    <section class="location section-pad" id="ubicacion" data-section="location"><div class="location-copy"><div class="eyebrow" data-text="location.eyebrow"></div><h2 data-text="location.title"></h2><p data-text="location.body"></p><address data-text="location.address"></address><a id="mapLink" class="text-link" target="_blank" rel="noopener"><span data-text="location.cta"></span><span aria-hidden="true">↗</span></a></div><div class="location-art" aria-label="Algarrobo, costa de la Región de Valparaíso"><div class="ocean-lines"></div><span class="map-ocean" data-text="location.ocean"></span><div class="shore"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-label"><span class="map-pin">✳</span><span data-text="brand.name"></span><small data-text="location.town"></small></div><span class="map-note" data-text="location.mapnote"></span></div></section>
+    <section class="booking section-pad" id="consulta" data-section="booking"><div class="booking-top"><div><div class="eyebrow" data-text="booking.eyebrow"></div><h2 data-text="booking.title"></h2></div><p data-text="booking.body"></p></div><form id="bookingForm"><div class="date-field"><label for="arrival" data-text="booking.arrival"></label><input type="date" id="arrival" required></div><div class="date-field"><label for="departure" data-text="booking.departure"></label><input type="date" id="departure" required></div><div class="date-field"><label for="guests" data-text="booking.guests"></label><select id="guests"><option value="1">1 persona</option><option value="2" selected>2 personas</option></select></div><button class="booking-button" type="submit"><span data-text="booking.cta"></span><span aria-hidden="true">↗</span></button></form><p class="booking-note" data-text="booking.note"></p><div class="faq"><details><summary data-text="faq.q1"></summary><p data-text="faq.a1"></p></details><details><summary data-text="faq.q2"></summary><p data-text="faq.a2"></p></details><details><summary data-text="faq.q3"></summary><p data-text="faq.a3"></p></details></div></section>
+  </main>
+  <footer class="footer"><div class="footer-top"><div class="wordmark"><span class="brand-name" data-text="brand.name"></span><small data-text="brand.subtitle"></small></div><a id="phoneLink"><span data-text="contact.phoneDisplay"></span> ↗</a><a href="https://hostal-el-roble-algarrobo.blogspot.com/" target="_blank" rel="noopener" data-text="footer.blog"></a></div><div class="footer-bottom"><span data-text="footer.credit"></span><button id="openEditor">Personalizar esta web <span aria-hidden="true">↗</span></button></div><p class="demo-note">Propuesta de diseño de CIMA · No es el sitio oficial. Información histórica del blog, sujeta a confirmación.</p></footer>
+  <dialog id="lightbox"><button class="close-lightbox" aria-label="Cerrar fotografía">×</button><img id="lightboxImage" alt=""><p id="lightboxCaption"></p></dialog>
+  <aside class="editor" id="editor" hidden aria-label="Panel de edición de prueba"><div class="editor-header"><div><small>CIMA / EDICIÓN</small><h2>Tu sitio, a tu manera.</h2></div><button id="closeEditor" aria-label="Cerrar panel">×</button></div><p class="editor-notice">Panel de prueba · Cambios guardados solo en este navegador. No modifica el sitio oficial ni se comparte entre dispositivos.</p><div class="editor-tabs" id="editorTabs" role="tablist" aria-label="Secciones editables"></div><div class="editor-fields" id="editorFields" role="tabpanel"></div><div class="editor-actions"><span id="saveState" role="status">Sin cambios pendientes</span><div><button id="discardDraft">Descartar</button><button id="saveLocal" class="save-button">Guardar versión local</button></div><div class="editor-tools"><button id="exportContent">Exportar contenidos</button><label>Importar JSON<input type="file" id="importContent" accept="application/json,.json" hidden></label><button id="resetContent">Restablecer</button></div></div></aside>
+  <div class="editor-backdrop" id="editorBackdrop" hidden></div><div class="toast" id="toast" role="status"></div>
+</body></html>
